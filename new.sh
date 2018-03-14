@@ -1,6 +1,6 @@
 #!/bin/bash
 
-D=`find . -mindepth 1 -maxdepth 1 -type d | cut -d'/' -f2 | sort | tail -1`
+D=`find . -regextype 'egrep' -regex './[0-9]{3}' -type d | cut -d'/' -f2 | sort | tail -1`
 # refer to: http://www.cnblogs.com/chengyeliang/p/5264526.html
 (( D=10#$D + 1 ))
 if [ $D -gt 999 ]
