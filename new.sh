@@ -19,6 +19,7 @@ cat >> index.html << eof
 <html>
     <head>
         <script src="https://cdn.bootcss.com/d3/4.13.0/d3.min.js"></script>
+        <link rel='stylesheet' href='index.css' />
     </head>
     <body>
         <div id='app'></div>
